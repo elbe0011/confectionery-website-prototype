@@ -20,6 +20,26 @@ html {
 
 body {
   margin: 0;
+  background-image: url("8556079988_1f7cd1802e_o.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100%;
+  background-color: brown;
+  position: fixed;
+  top: 0;
+}
+
+h1, h2, h3, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 .nav {
@@ -38,4 +58,26 @@ body {
 
 .nav-check:checked ~ .nav-label {
   background-color: grey;
+}
+
+main {
+  padding-top: 7rem;
+}
+
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+}
+
+.welcome-banner {
+  color: white;
+  background-color: #3d120a;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.sec-about-us {
+  background-color: white;
 }

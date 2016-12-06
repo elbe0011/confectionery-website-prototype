@@ -5,31 +5,48 @@
   <title>Coco's Chocolatiers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Bungee" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Coco's Chocolatiers</h1>
-    <input type="checkbox" class="nav-check" id="nav-check">
-    <!-- This is the button we’d click to open/close the navigation -->
-    <label class="nav-label" for="nav-check">Navigate</label>
-    <nav class="nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Products</a></li>
-      </ul>
-    </nav>
+    <div class="width-adjust">
+      <h1>Coco's Chocolatiers</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <div class="nav-hidden">
+    <div class="width-adjust">
+      <h2>Coco's Chocolatiers</h2>
+      <input type="checkbox" class="nav-check" id="nav-check">
+      <!-- This is the button we’d click to open/close the navigation -->
+      <label class="nav-label" for="nav-check">N</label>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+      </nav>    
+    </div>
+  </div>
   <main>
     <section class="welcome-banner">
       <h2>GOAT CHOCOLATE 1 HUNNIT</h2>
       <p>Welcome</p>
     </section>
     <section class="sec-about-us">
-      <h2>About us</h2>
-      <p>The GODIVA global team of Chefs and Chocolatiers keep the Belgian tradition alive – and delicious. GODIVA Chefs and Chocolatiers are passionate about continuing the vision of our company’s founder Joseph Draps. Monsieur Draps believed in creating complex, yet always balanced notes of super-premium chocolates, an ode to the Belgian tradition. Today our global team of Chefs and Chocolatiers has the pleasure of creating extraordinary Belgian chocolates that are available in over 80 countries.</p>
+      <div class="text-adjustments">
+        <h2>About us</h2>
+        <p>The GODIVA global team of Chefs and Chocolatiers keep the Belgian tradition alive – and delicious. GODIVA Chefs and Chocolatiers are passionate about continuing the vision of our company’s founder Joseph Draps. Monsieur Draps believed in creating complex, yet always balanced notes of super-premium chocolates, an ode to the Belgian tradition. Today our global team of Chefs and Chocolatiers has the pleasure of creating extraordinary Belgian chocolates that are available in over 80 countries.</p>
+      </div>
     </section>
     <section class="sec-products">
       <h2>Products</h2>

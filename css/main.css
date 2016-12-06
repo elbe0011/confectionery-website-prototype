@@ -19,18 +19,21 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   background-image: url("8556079988_1f7cd1802e_o.jpg");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 header {
   width: 100%;
-  background-color: brown;
-  position: fixed;
+  color: white;
+  background-color: springgreen;
+  position: absolute;
   top: 0;
+  z-index: 999;
 }
 
 h1, h2, h3, ul {
@@ -38,16 +41,72 @@ h1, h2, h3, ul {
   padding: 0;
 }
 
+h1 {
+  text-align: center;
+}
+
 ul {
   list-style: none;
+  overflow: hidden;
+  border: 1px solid white;
+}
+
+nav a {
+  text-decoration: none;
+  float: left;
+  width: 50%;
+  padding: .5rem;
+  text-align: center;
+  color: white;
+  background-color: springgreen;
+  border: 1px solid white;
+
+}
+
+p {
+  font-family: 'Lora', serif;;
+}
+
+.text-adjustments {
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+.width-adjust {
+  max-width: 50rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav-hidden {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+}
+
+.nav-hidden h2{
+  font-size: 1rem;
+  width: 100%;
+  padding: .5rem;
+  position: absolute;
+  text-align: center;
+  background-color: springgreen;
+  z-index: 98;
+  border: 2px solid white;
 }
 
 .nav {
-  display: none;
+  position: absolute;
+  top: -10rem;
+  width: 100%;
+  z-index: 97;
+  transition: 500ms;
 }
 
 .nav-check:checked ~ .nav {
-  display: block;
+  top: 2.4rem;
+  transition: 500ms;
 }
 
 .nav-check {
@@ -56,12 +115,28 @@ ul {
   top: -3em;
 }
 
-.nav-check:checked ~ .nav-label {
-  background-color: grey;
+.nav-label {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  background-color: chocolate;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  z-index: 99;
+  transition: 500ms;
 }
 
+.nav-check:checked ~ .nav-label {
+  left: -1.5rem;
+  transition: 500ms;
+}
+
+/*.nav-check:checked ~ .nav-label {
+  background-color: grey;
+}*/
+
 main {
-  padding-top: 7rem;
+  padding-top: 20rem;
 }
 
 section {

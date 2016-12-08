@@ -173,6 +173,7 @@ section {
   height: 100%;
   padding: 1rem;
   border: 2px solid white;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .sec-about-us {
@@ -221,12 +222,16 @@ section {
 .card-img {
   position: absolute;
   z-index: 50;
-  bottom: 80%;
+  bottom: 87%;
   width: 100%;
 }
 
 .card h3 {
   border-bottom: 2px solid white;
+}
+
+.card p {
+  min-height: 5rem;
 }
 
 .card-text {
@@ -237,4 +242,25 @@ section {
   border-radius: 1rem;
   width: 100%;
   margin-top: 50%;
+}
+
+.sec-location {
+  background: white;
+}
+
+.location-img {
+  margin: 1rem auto;
+  max-width: 25rem;
+}
+
+.location-img img {
+  border-radius: 1rem;
+}
+
+.sec-reviews h2{
+  background-color: #3d120a;
+  color: white;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 1rem 1rem 0 0;
 }

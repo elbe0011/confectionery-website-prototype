@@ -264,3 +264,64 @@ section {
   border: 2px solid white;
   border-radius: 1rem 1rem 0 0;
 }
+
+.card-list {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.review {
+  width: 100%;
+  max-width: 25rem;
+  margin: 1rem auto 0;
+  overflow: hidden;
+}
+
+.review-img {
+  width: 50%;
+  float: left;
+}
+
+.review-img img {
+  border: 2px solid white;
+  border-radius: 1rem 0 0 0;
+}
+
+.review-rating {
+  width: 50%;
+  float: right;
+}
+
+.review-rating img {
+  border: 2px solid white;
+  border-radius: 0 1rem 0 0;
+}
+
+.review-text {
+  background-color: springgreen;
+  color: white;
+  padding: 1rem;
+  border: 2px solid white;
+  width: 100%;
+  float: left;
+}
+
+.review-text p {
+  min-height: 5rem;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+}
+
+.icon-list {
+  overflow: hidden;
+}
+
+.icon-list li {
+  width: 25%;
+  float: left;
+}

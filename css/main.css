@@ -121,7 +121,7 @@ p {
 
 .nav-check {
   /* Put the checkbox off the top of the screen */
-  position: absolute;
+  position: fixed;
   top: -3em;
 }
 
@@ -147,7 +147,7 @@ p {
 }*/
 
 main {
-  padding-top: 20rem;
+  padding-top: 15rem;
 }
 
 section {
@@ -276,33 +276,28 @@ section {
   max-width: 25rem;
   margin: 1rem auto 0;
   overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+  background-color: springgreen;
+  border: 2px solid white;
 }
 
 .review-img {
   width: 50%;
   float: left;
-}
-
-.review-img img {
-  border: 2px solid white;
-  border-radius: 1rem 0 0 0;
+  border-right: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 .review-rating {
   width: 50%;
   float: right;
-}
-
-.review-rating img {
-  border: 2px solid white;
-  border-radius: 0 1rem 0 0;
+  border-left: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 .review-text {
-  background-color: springgreen;
   color: white;
   padding: 1rem;
-  border: 2px solid white;
   width: 100%;
   float: left;
 }
@@ -317,6 +312,12 @@ footer {
   padding: 1rem;
 }
 
+.footer-content {
+  text-align: center;
+  max-width: 25rem;
+  margin: auto;
+}
+
 .icon-list {
   overflow: hidden;
 }
@@ -324,4 +325,108 @@ footer {
 .icon-list li {
   width: 25%;
   float: left;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.3;
+  }
+
+  .card {
+    max-width: 38rem;
+    margin: 3rem auto;
+    position: relative;
+  }
+
+  .card img {
+    display: block;
+    width: 32%;
+    border-radius: 100%;
+    border: 2px solid white;
+    margin: 0;
+  }
+
+  .card-img {
+    position: absolute;
+    left: 0;
+    top: -7%;
+    width: 100%;
+  }
+
+  .card-text {
+    width: 70%;
+    margin-top: 0;
+    margin-left: 30%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  nav a {
+    width: 25%;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  .text-adjustments, .about-us-img, .location-img {
+    display: inline-block;
+    text-align: left;
+    width: 22rem;
+    vertical-align: top;
+    padding-top: 1em;
+    margin-top: 0;
+  }
+
+  .review-text p, .card-text p {
+    text-align: left;
+  }
+
+  .sec-content {
+    display: inline-block;
+  }
+
+  .review-list {
+    width: 100%;
+  }
+
+  .review {
+    max-width: 50rem;
+  }
+
+  .review-img, .review-rating {
+    width: 25%;
+  }
+
+  .review-text {
+    width: 50%;
+  }
+
+  .review-img {
+    border-right: 2px solid white;
+    border-bottom: none;
+  }
+
+  .review-rating {
+    border-left: 2px solid white;
+    border-bottom: none;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }

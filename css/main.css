@@ -257,6 +257,26 @@ section {
   border-radius: 1rem;
 }
 
+.sec-location p {
+  margin-bottom: 1rem;
+}
+
+.hours {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hours dt {
+  float: left;
+  width: 50%;
+}
+
+.hours dd {
+  float: left;
+  width: 50%;
+  margin: 0;
+}
+
 .sec-reviews h2{
   background-color: #3d120a;
   color: white;
